@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ReportSpecList>
+  <report name="Peptide Ratio Results" rowsource="pwiz.Skyline.Model.Databinding.Entities.Precursor" sublist="Results!*">
+    <column name="Peptide.Sequence" />
+    <column name="Mz" />
+    <column name="Charge" />
+    <column name="Peptide.Protein.Name" />
+    <column name="Results!*.Value.PeptideResult.ResultFile.Replicate.Name" />
+    <column name="Results!*.Value.PeptideResult.ResultFile.FileName" />
+    <column name="Results!*.Value.PeptideResult.&quot;ratio_Light:Heavy&quot;" />
+    <column name="Results!*.Value.&quot;annotation_annotation_QValue&quot;" />
+    <column name="Results!*.Value.PeptideResult.PeptideRetentionTime" />
+    <column name="Peptide.AverageMeasuredRetentionTime" />
+    <column name="Peptide.PredictedRetentionTime" />
+    <column name="Results!*.Value.PeptideResult.PeptidePeakFoundRatio" />
+    <column name="Results!*.Value.TotalArea" />
+    <column name="Results!*.Value.TotalAreaRatio" />
+    <column name="Results!*.Value.TotalAreaNormalized" />
+    <column name="IsDecoy" />
+    <column name="Results!*.Value.PeptideResult.&quot;rdotp_Light:Heavy&quot;" />
+    <filter column="Results!*.Value.PeptideResult" opname="isnotnullorblank" />
+  </report>
+</ReportSpecList>
